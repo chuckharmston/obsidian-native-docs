@@ -61,6 +61,7 @@ export const LogoColorLight = '../svg/logo/color-light.svg'
 export const FeaturedSVG = '../svg/undraw/undraw_design_inspiration.svg'
 export const DefaultSVG = '../svg/undraw/undraw_my_feed.svg'
 export const DefaultImage = '../images/undraw/undraw_my_feed.png'
+export const Logo = LogoColor
 export const LogoImage = '../images/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
