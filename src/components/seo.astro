@@ -38,9 +38,7 @@ const openGraph = {
     alt: frontmatter.title,
   },
   article: {
-    author: frontmatter.author,
     publishedTime: SiteMetadata.buildTime,
-    tags: frontmatter.tags,
   },
 }
 const twitter = {
@@ -165,7 +163,6 @@ const article: WithContext<Article> = {
   datePublished: frontmatter.publishDate,
   description: frontmatter.description,
   headline: frontmatter.title,
-  keywords: frontmatter.tags && frontmatter.tags.join(', '),
   image: {
     '@type': 'ImageObject',
     url: image.src,

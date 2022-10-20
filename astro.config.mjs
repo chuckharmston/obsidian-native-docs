@@ -19,8 +19,8 @@ export default defineConfig({
       external: ['svgo'],
     },
   },
-  site: 'https://hellotham.github.io',
-  base: '/hello-astro',
+  site: 'https://obsidian-native.com',
+  base: '/',
   integrations: [tailwind(), sitemap(), image(), mdx(), alpinejs(), robotsTxt()],
   experimental: {
     integrations: true,

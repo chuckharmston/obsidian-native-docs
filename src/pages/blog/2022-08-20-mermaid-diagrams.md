@@ -2,19 +2,9 @@
 layout: ../../layouts/blog.astro
 title: Mermaid Diagrams
 description: Generate mermaid diagrams in blog posts.
-author: Chris Tham
 publishDate: 2022-08-20T00:00:00.000Z
 coverSVG: ../svg/undraw/undraw_timeline.svg
 socialImage: ../images/undraw/undraw_timeline.png
-categories:
-  - information
-tags:
-  - mermaid
-  - diagram
-  - flowchart
-  - sequence
-  - class
-  - ER
 ---
 
 ## Simple Example

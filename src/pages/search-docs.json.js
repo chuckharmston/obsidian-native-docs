@@ -4,10 +4,7 @@ const documents = posts.map(post => ({
   url: post.url,
   title: post.frontmatter.title,
   description: post.frontmatter.description,
-  author: post.frontmatter.author,
   publishDate: post.frontmatter.publishDate,
-  categories: post.frontmatter.categories,
-  tags: post.frontmatter.tags,
 }))
 
 export async function get() {
