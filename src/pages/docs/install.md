@@ -1,6 +1,6 @@
 ---
-section: Another Section
-title: Page 4
+section: Getting Started
+title: Install
 description: Lorem ipsum dolor sit amet - 4
 layout: ../../layouts/doc.astro
 ---

@@ -25,13 +25,13 @@ const svgimg = post.frontmatter.coverSVG || post.frontmatter.coverImage
           <SVGImg
             src={svgimg}
             alt={post.frontmatter.title + ' featured image'}
-            class="relative w-full h-64 bg-purple-100 dark:bg-purple-800 rounded-lg overflow-hidden group-hover:opacity-75 object-center object-cover"
+            class="relative w-full h-64 bg-violet-100 dark:bg-violet-800 rounded-lg overflow-hidden group-hover:opacity-75 object-center object-cover"
           />
         ) : (
           <Img
             src={image}
             alt={post.frontmatter.title + ' featured image'}
-            class="relative w-full h-64 bg-purple-100 dark:bg-purple-800 rounded-lg overflow-hidden group-hover:opacity-75 object-center object-cover"
+            class="relative w-full h-64 bg-violet-100 dark:bg-violet-800 rounded-lg overflow-hidden group-hover:opacity-75 object-center object-cover"
           />
         )
       }
@@ -40,20 +40,20 @@ const svgimg = post.frontmatter.coverSVG || post.frontmatter.coverImage
     <div class="p-6">
       <a href={post.url}>
         <h1
-          class="title-font text-xl font-bold text-purple-600 hover:text-pink-600 dark:text-purple-300 dark:hover:text-pink-300 mt-2"
+          class="title-font text-xl font-bold text-violet-600 hover:text-pink-600 dark:text-violet-300 dark:hover:text-pink-300 mt-2"
         >
           {post.frontmatter.title}
         </h1>
       </a>
       <div class="flex items-center flex-wrap">
         <span
-          class="text-gray-500 dark:text-gray-400 mr-3 inline-flex items-center leading-none text-xs pr-3 py-1 border-r-2 border-purple-200 dark:border-purple-600"
+          class="text-gray-500 dark:text-gray-400 mr-3 inline-flex items-center leading-none text-xs pr-3 py-1 border-r-2 border-violet-200 dark:border-violet-600"
         >
           <Icon class="w-4 h-4 mr-1" pack="heroicons-outline" name="calendar" />
           {post.frontmatter.publishDate?.slice(0, 10)}
         </span>
         <span
-          class="text-gray-500 dark:text-gray-400 mr-3 inline-flex items-center leading-none text-xs pr-3 py-1 border-r-2 border-purple-200 dark:border-purple-600"
+          class="text-gray-500 dark:text-gray-400 mr-3 inline-flex items-center leading-none text-xs pr-3 py-1 border-r-2 border-violet-200 dark:border-violet-600"
         >
           <Icon class="w-4 h-4 mr-1" pack="heroicons-outline" name="clock" />
           {post.frontmatter.minutesRead}

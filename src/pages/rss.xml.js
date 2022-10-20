@@ -1,7 +1,7 @@
 import rss from '@astrojs/rss'
 import { SiteMetadata } from '../config'
 
-const postImportResult = import.meta.glob('./blog/*.{md,mdx}', { eager: true })
+const postImportResult = import.meta.glob('./changelog/*.{md,mdx}', { eager: true })
 const posts = Object.values(postImportResult)
 
 export const get = () =>

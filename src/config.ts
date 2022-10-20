@@ -51,18 +51,21 @@ export const SiteMetadata = {
   buildTime: new Date().toString(),
 }
 
-export const Logo = '../svg/astro/logomark-light.svg'
-export const LogoImage = '../images/astro/full-logo-light.png'
+export const LogoBlack = '../svg/logo/black.svg'
+export const LogoWhite = '../svg/logo/white.svg'
+export const LogoBW = '../svg/logo/bw.svg'
+export const LogoBWLight = '../svg/logo/bw-light.svg'
+export const LogoColor = '../svg/logo/color.svg'
+export const LogoColorLight = '../svg/logo/color-light.svg'
+
 export const FeaturedSVG = '../svg/undraw/undraw_design_inspiration.svg'
 export const DefaultSVG = '../svg/undraw/undraw_my_feed.svg'
 export const DefaultImage = '../images/undraw/undraw_my_feed.png'
+export const LogoImage = '../images/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
-  { name: 'Home', href: '' },
-  { name: 'About', href: 'about' },
-  { name: 'Contact', href: 'contact' },
-  { name: 'Blog', href: 'blog' },
-  { name: 'Docs', href: 'doc/introduction' },
+  { name: 'Documentation', href: 'docs/introduction' },
+  { name: 'Changelog', href: 'changelog' },
 ]
 
 export const PAGE_SIZE = 6
@@ -74,10 +77,12 @@ export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 export type Sidebar = Record<string, { text: string; link: string }[]>
 
 export const SIDEBAR: Sidebar = {
-  'Section Header': [
-    { text: 'Introduction', link: 'doc/introduction' },
-    { text: 'Page 2', link: 'doc/page-2' },
-    { text: 'Page 3', link: 'doc/page-3' },
+  'Getting Started': [
+    { text: 'Introduction', link: 'docs/introduction' },
+    { text: 'Installation', link: 'docs/install' },
   ],
-  'Another Section': [{ text: 'Page 4', link: 'doc/page-4' }],
+  'Another Section': [
+    { text: 'Page 3', link: 'docs/page-3' },
+    { text: 'Page 4', link: 'docs/page-4' },
+  ],
 }

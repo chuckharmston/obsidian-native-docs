@@ -3,7 +3,6 @@ import type { Frontmatter } from '../config'
 import Base from './base.astro'
 import PageContent from '../components/pagecontent.astro'
 import LeftSidebar from '../components/leftsidebar.astro'
-import RightSidebar from '../components/rightsidebar.astro'
 import * as CONFIG from '../config'
 import type { MarkdownHeading } from 'astro'
 
@@ -36,8 +35,5 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`
       </section>
       </PageContent>
     </div>
-    <aside id="grid-right" class="grid-sidebar" title="Table of Contents">
-      <RightSidebar headings={headings} githubEditUrl={githubEditUrl} />
-    </aside>
   </main>
 </Base>

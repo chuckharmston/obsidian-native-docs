@@ -14,7 +14,7 @@ export interface Props {
 const { page } = Astro.props
 
 const frontmatter: Frontmatter = {
-  title: 'Blog' + (page.size < page.total ? ' (page ' + page.currentPage + ' of ' + page.lastPage + ')' : ''),
+  title: 'Changelog' + (page.size < page.total ? ' (page ' + page.currentPage + ' of ' + page.lastPage + ')' : ''),
   description:
     'Showing articles ' +
     (page.start + 1) +
@@ -30,7 +30,7 @@ const frontmatter: Frontmatter = {
 
 export async function getStaticPaths({ paginate }: { paginate: PaginateFunction }) {
   const allPosts = (await Astro.glob<MarkdownInstance<Frontmatter>>(
-    '../blog/**/*.{md,mdx}'
+    '../changelog/**/*.{md,mdx}'
   ))
   const posts = allPosts
     .sort(

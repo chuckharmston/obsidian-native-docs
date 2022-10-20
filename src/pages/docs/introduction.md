@@ -1,11 +1,8 @@
 ---
-section: Section Header
 title: Introduction
 description: Docs intro
 layout: ../../layouts/doc.astro
 ---
-
-**Welcome to Astro!**
 
 This is the `docs` starter template. It contains all of the features that you need to build a Markdown-powered documentation site, including:
 

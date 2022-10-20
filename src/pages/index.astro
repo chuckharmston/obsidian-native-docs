@@ -18,7 +18,7 @@ const frontmatter: Frontmatter = {
 }
 
 const posts = (await Astro.glob(
-  './blog/**/*.{md,mdx}'
+  './changelog/**/*.{md,mdx}'
 )) as MarkdownInstance<Frontmatter>[]
 const latestPosts = posts
   .sort(
